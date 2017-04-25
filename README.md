@@ -3,9 +3,13 @@ this project will be covering many scenarios for donload , uploading to gdrive a
 
 #Features
 
-Downloads the file to an in memory file handle and uploads from there without using precious disk space. Operates on one file at a time. Only speed limitation is network bandwith Downloads can be picked up from where you left off using the paging feature. Can take a filename and only upload file from google drive that match .llll
+Downloads the file to an in memory file handle and uploads from there without using precious disk space. <br />
+Operates on one file at a time. <br />
+Only speed limitation is network bandwith <br />
+Downloads can be picked up from where you left off using the paging feature. <br />
+Can take a filename and only upload file from google drive that match <br />
 
-#Usage
+#Usage<br />
 
 This tool has built in help. See word document for steps
 
