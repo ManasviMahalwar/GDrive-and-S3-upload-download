@@ -11,5 +11,8 @@ Can take a filename and only upload file from google drive that match <br />
 
 #Usage<br />
 
-This tool has built in help. See word document for steps
+This tool has built in help. See word document for steps <br/>
+
+#Note
+you can trace req to your API in console provided by Google and trace request on S3 by turning on S3 logging<br/>
 
