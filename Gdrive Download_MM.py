@@ -310,12 +310,18 @@ def main():
                     if args.endpage and page_counter == args.endpage:
                          log.info(u"User defined engapage reached, finished paging at page {}".format(page_counter))
                          readbyte.close()
+                         log.info("Running time: {}".format(str(datetime.timedelta(seconds=(round(time.time() - start, 3))))))
+                         log.info('Total files processed:' + str(file_count))
+                         log.info('Total files uploaded: '+ str(upload_count))
                          break
                     page_token = result_gfiles.get('nextPageToken')
                     if not page_token:
                         print('\nLast page token')
                         log.info('Reached the end of pagination, All files traversed')
                         readbyte.close()
+                         log.info("Running time: {}".format(str(datetime.timedelta(seconds=(round(time.time() - start, 3))))))
+                         log.info('Total files processed:' + str(file_count))
+                         log.info('Total files uploaded: '+ str(upload_count))
                         break
                 except (Exception) as e:
                     log.error ('An error occurred: '+ str(e) )
@@ -323,10 +329,8 @@ def main():
                     log.error(e)
                     break
 
-    print('\n')
-    log.info("Running time: {}".format(str(datetime.timedelta(seconds=(round(time.time() - start, 3))))))
-    log.info('Total files processed:' + str(file_count))
-    log.info('Total files uploaded: '+ str(upload_count))
+    print('\n program ended')
+   
     readbyte.close()
 
 
